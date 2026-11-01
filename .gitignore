@@ -5,6 +5,9 @@ __pycache__/
 
 source materials/
 samples/
+BRIEF.md
+CLAUDE.local.md
+DEVLOG.md
 
 # C extensions
 *.so
