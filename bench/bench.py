@@ -72,7 +72,7 @@ def summarize(values):
 
 
 def run_request(engine, model, prompt_ids, out_len, device):
-    """Serve one request. Returns (start, first_token_time, finish, n_tokens)."""
+    """Serve one request. Returns (start, per-token timestamps, finish)."""
     input_ids = prompt_ids.to(device)
     attention_mask = torch.ones_like(input_ids)
     token_times = []
