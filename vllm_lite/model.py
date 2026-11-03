@@ -26,7 +26,7 @@ def build_inputs(tok, prompt):
 def eos_ids(model):
     eos = model.generation_config.eos_token_id
     if eos is None:
-        return set();
+        return set()
     return set(eos) if isinstance(eos, (list,tuple)) else {eos}
 
 @torch.inference_mode()
